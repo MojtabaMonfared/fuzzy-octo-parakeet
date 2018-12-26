@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Movify</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" rel="stylesheet" type="text/css" />
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" type="text/css" />
+    <!-- <link href="../../static/stylesheets/pandoc-code-highlight.css" rel="stylesheet" type="text/css" /> -->
+  </head>
+  <body>
+    <div class="ui inverted vertical center aligned segment">
+      <div class="ui container">
+        <div class="ui massive borderless inverted menu">
+          <div class="right item">
+            <div class="ui massive secondary inverted pointing menu">
+              <a class="active item">Home</a><a class="item">Contact</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ui text container">
+        <h1 class="ui inverted header">
+          Movify
+        </h1>
+        <div class="ui small card">
+                <div class="image">
+                  <img src="{{ cover }}" height="42" width="42">
+                </div>
+                <div class="content">
+                  <a class="header">{{ title }}</a>
+                  <div class="meta">
+                    <span class="date">Unknown</span>
+                  </div>
+                  <div class="description">
+                    {{ info }}
+                  </div>
+                </div>
+              </div>
+        </div>
+      <div class="ui inverted vertical footer segment">
+            Made with <i class="heart icon heart-color"></i> By Mojtaba Monfared <a href="https://t.me/MojtabaMonfared"><i class="telegram icon telegram-color"></i></a>
+        </div>
+    </div>
+    <!-- <style type="text/css">
+      .ui.inverted.vertical.segment {
+        height: 100vh;
+      }
+      .ui.inverted.vertical.segment h1.header.item {
+        font-size: 2em;
+      }
+      .ui.inverted.vertical.segment a.item {
+        font-size: 1.2em;
+      }
+      .ui.inverted.vertical.segment .ui.text.container {
+        height: 300px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+      .ui.inverted.vertical.segment .ui.text.container h1.header {
+        font-size: 3em;
+      }
+      .ui.inverted.vertical.segment .ui.text.container p {
+        font-size: 1.6em;
+        line-height: 1.6;
+      }
+      .ui.inverted.vertical.segment .ui.footer.segment {
+        height: 80px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        font-size: 1.2em;
+        color: gray;
+      }
+      .ui.inverted.vertical.segment .ui.footer.segment a {
+        color: white;
+      }
+    </style> -->
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+</html>

@@ -33,4 +33,4 @@ def index_POST():
 
 
 if __name__ == '__main__':
-    app.run(port=4294) 
+    app.run(port=80) 

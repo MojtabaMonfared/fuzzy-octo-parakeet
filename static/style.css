@@ -1,7 +1,24 @@
 @charset "UTF-8";
 /* Some mixins */
 /* Basic style for some HTML elements */
+@font-face {
+  font-family: 'Samim';
+  src: url('./fonts/Samim.eot');
+  src: url('./fonts/Samim.eot?#iefix') format('embedded-opentype'),
+   url('./fonts/Samim.woff') format('woff'),
+   url('./fonts/Samim.ttf') format('truetype');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Samim';
+  src: url('./fonts/Samim-Bold.eot');
+  src: url('./fonts/Samim-Bold.eot?#iefix') format('embedded-opentype'),
+   url('./fonts/Samim-Bold.woff') format('woff'),
+   url('./fonts/Samim-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
 body {
+  font-family: 'Samim', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility; }
@@ -11,17 +28,17 @@ footer.center.aligned p {
 footer p {
   color: rgba(255, 255, 255, 0.5); }
 
-.heart-color {
+ul,
+ol {
+  padding-left: 2rem; }
+
+  .heart-color {
     color: rgb(253, 60, 60);
 }
 
 .telegram-color {
   color: rgb(0, 136, 204);
 }
-
-ul,
-ol {
-  padding-left: 2rem; }
 
 p {
   line-height: 1.5rem; }

@@ -4,6 +4,7 @@ import requests
 
 tvm = pytvmaze.TVMaze('meirona', 'vNPdjTax7m9iwsuhnUSanNVrjcjBsT6y')
 
+
 def search_by_name(name):
     return tvm.get_show(show_name=name)
 
@@ -33,7 +34,14 @@ def get_medium_cover(name):
     show = tvm.get_show(show_name=name)
     return show.image['medium']
 
-
 def get_status(name):
     show = tvm.get_show(name)
     return show.status
+
+def get_homepage(name):
+        show = tvm.get_show(name)
+        return show.url
+
+def get_rating(name):
+        show = tvm.get_show(name)
+        return show.rating

@@ -35,13 +35,13 @@ def get_medium_cover(name):
     return show.image['medium']
 
 def get_status(name):
-    show = tvm.get_show(name)
+    show = tvm.get_show(show_name=name)
     return show.status
 
 def get_homepage(name):
-        show = tvm.get_show(name)
-        return show.url
+    show = tvm.get_show(show_name=name)
+    return show.url
 
 def get_rating(name):
-        show = tvm.get_show(name)
-        return show.rating
+    show = tvm.get_show(show_name=name)
+    return show.rating['average']

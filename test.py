@@ -1,4 +1,8 @@
 from api import *
 
 
-print get_status('breaking bad')
+def get_rating(name):
+    show = tvm.get_show(show_name=name)
+    return show.rating['average']
+
+print get_rating('dexter')
